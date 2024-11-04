@@ -35,14 +35,7 @@ public class Main {
         employeeBook.addEmployee(new Employee("Шейкер", "Протеиновый",
                 "Дочевский"
                 , 2, 312335));
-        employeeBook.getAllInfoAllEmployee();
-        employeeBook.CalculateSumSalaries();
-        employeeBook.findMidSalary();
-        employeeBook.findBigSalary();
-        employeeBook.getInfoAllFIO();
-        employeeBook.changeEmployee("Евгений", "Сафронов"
-                , "Владимирович", 0, 4);
-        employeeBook.printAllStaffDepartment(4);
+        System.out.println(employeeBook.findMidSalary());
     }
 
 }

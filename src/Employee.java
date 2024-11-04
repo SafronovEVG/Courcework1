@@ -1,8 +1,8 @@
 public class Employee {
+    private int id;
     private String name;
     private String surname;
     private String patronymic;
-    private int id;
     private Integer department;
     private Integer salary;
     private static int count;
@@ -17,8 +17,7 @@ public class Employee {
     }
 
     public int increment() {
-        count++;
-        return count;
+        return count++;
     }
 
     public String getName() {
