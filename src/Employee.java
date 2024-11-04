@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Employee {
     private int id;
     private String name;
@@ -73,5 +75,20 @@ public class Employee {
                 ", department='" + department + '\'' +
                 ", salary=" + salary +
                 '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, patronymic);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        Employee employee = (Employee) obj;
+        return name.equals(employee.name)
+                && surname.equals(employee.surname)
+                && patronymic.equals(employee.patronymic);
     }
 }
